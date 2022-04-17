@@ -18,7 +18,7 @@ class CreateEventsTable extends Migration
             $table->string('eventTitle');
             $table->text('eventDescription')->nullable();
             $table->date('startDate');
-            $table->date('endDateDate');
+            $table->date('endDate');
             $table->string('featuredImage')->nullable();
             $table->string('location');
             $table->string('address');
