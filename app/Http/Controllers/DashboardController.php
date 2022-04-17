@@ -249,11 +249,11 @@ class DashboardController extends Controller
         }
 
         if ($task == 'Delete') {
-            return redirect('dashboard')->with('success', 'Deleted Successfully');
+            return response()->json(['status' => 200, 'message' => 'Deleted Successfully']);
         } else if ($task == 'Activate') {
-            return redirect('dashboard')->with('success', 'Activated Successfully');
+            return response()->json(['status' => 200, 'message' => 'Activated Successfully']);
         } else if ($task == 'Block') {
-            return redirect('dashboard')->with('success', 'Blocked Successfully');
+            return response()->json(['status' => 200, 'message' => 'Blocked Successfully']);
         }
     }
 
